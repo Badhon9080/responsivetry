@@ -1,0 +1,390 @@
+/*
+Theme Name: 
+Author: 
+Version: 1.0.0
+
+
+Table of Content
+===================================================
+
+    1. Common Css
+    2. Nav Section
+    3. Banner Section
+*/
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*//Common Css End */
+/* Nav Section Css Start */
+#nav{
+    background-color: #02918c;
+}
+#main_menu ul li a{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.4s linear;
+}
+#main_menu ul li:hover a{
+    color: #cfc91d;
+}
+/* //Nav Section Css End */
+/*Banner Section Css Start */
+#banner{
+    height: 725px;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+#banner::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(64, 82, 82, 0.66);
+    z-index: -1;
+
+}
+.banner_concept{
+    margin-top: 185px;
+}
+.banner_concept h3{
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+.banner_concept h1{
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    color: #fff;
+}
+.banner_concept p{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 12px;
+}
+.divider_img{
+    margin-top: 58px;
+}
+.knowmore{
+    margin-top: 54px;
+}
+.knowmore a{
+    font-weight: 800;
+    background-color: #cfc91d;
+    padding: 12px 24px;
+    font-size: 14px;
+    color: #0b1016;
+}
+/* //Banner Section Css End */
+/* About Section Css Start */
+.about_content{
+    margin-top: 75px;
+}
+.about_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+    
+}
+
+.about_content p{
+    font-size: 16px;
+    margin: auto;
+    line-height: 33px;
+    width: 900px;
+    margin-top: 39px;
+    color: #7e8287;
+}
+.about_content span{
+    font-weight: 800;
+    font-size: 23px;
+}
+.about_title_goes_here{
+    margin-top: 75px;
+}
+.about_title_goes_here_part_1{
+    border-right: 1px solid #d9dbdb;
+    height: 210px;
+}
+.about_title_goes_here_part_2{
+    border-right: 1px solid #d9dbdb;
+    height: 210px;
+}
+.about_title_goes_here_part_3{
+    border-right: 1px solid #d9dbdb;
+    height: 210px;
+}
+.about_title_goes_here_part_4{
+    border-right-color: transparent;
+    height: 210px;
+}
+.about_title_goes_here_heading{
+    margin-top: 25px;
+}
+.about_title_goes_here_heading h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+}
+.about_title_goes_here_heading p{
+    font-size: 11px;
+    margin-left: 70px;
+    line-height: 23px;
+    color: #7e8287;
+    width: 180px;
+    margin-top: 25px;
+}
+/* //About Section Css End */
+/* Service Section Css Start */
+#service{
+    height: 728px;
+    margin-top: 111px;
+    background-image: url(../img/typing.png);
+    background-position: center;
+    background-size: cover;
+}
+.service_content{
+    margin-top: 60px;
+}
+.service_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}
+.service_content p{
+    margin-top: 40px;
+    width: 475px;
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 35px;
+}
+.service_title_goes_here{
+    margin-top: 52px;
+}
+.service_title_goes_here_part_3 {
+    margin-top: 56px;
+}
+.service_title_goes_here_part_4 {
+    margin-top: 56px;
+}
+.service_title_goes_here_heading{
+    margin-top: 23px;
+}
+.service_title_goes_here_heading h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #7e8287;
+}
+.service_title_goes_here_paragraph{
+    font-size: 11px;
+    width: 174px;
+    margin-top: 18px;
+    color: #7e8287;
+}
+
+/* //Service Section Css End */
+/*Mywork Section Css Start */
+.mywork_content{
+    margin-top: 99px;
+}
+.mywork_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+}  
+.mywork_content p{
+    margin-top: 29px;
+    margin-left: 300px;
+    line-height: 30px;
+    color: #7e828c;
+    width: 690px;
+}
+.mywork_title_goes_here{
+    margin-top: 82px;
+}
+.mywork_title_goes_here_img{
+    position: relative;
+}
+.myfolio_title_goes_here_overlay{
+    position: absolute;
+    inset: 28px;
+    background-color: rgba(110, 148, 146, 0.86);
+   opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s linear;  
+   
+}
+
+.mywork_title_goes_here_img:hover .myfolio_title_goes_here_overlay{
+    opacity: 1;
+    visibility: visible;
+}   
+
+.mywork_title_goes_here_heading{
+    margin-top: 68px;
+}
+.mywork_title_goes_here_heading h4{
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+}
+.mywork_title_goes_here_paragraph{
+    margin-top: 15px;
+}
+.mywork_title_goes_here_paragraph p{
+    width: 197px;
+  /*  margin-left: 58px; */
+   margin: auto;
+    line-height: 24px;
+    font-size: 13px;
+    color: #fff;
+}
+/* //Mywork Section Css End */
+
+/* Contact Section Css Start */
+.contact_content{
+    margin-top: 98px;
+}
+.contact_content h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;    
+}
+
+.contact_content p{
+    line-height: 43px;
+    margin-left: 300px;
+    margin-top: 18px;
+    color: #7e8287;
+    width: 687px;
+}
+.form_section{
+    height: 688px;
+    margin-top: 78px;
+    background-color: #0b0b0b;
+}
+form .name input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+form .name input{
+    margin-top: 68px;
+    color: #7e8287;
+    padding-bottom: 20px; 
+    background-color: #0b0b0b;
+    border: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #7e8287;
+    text-align: center;
+    width: 700px;
+}
+
+form .email_address{
+    margin-top: 48px;
+}
+form .email_address input{
+    padding-bottom: 20px;
+    color: #7e8287;
+    background-color: #0b0b0b;
+    border: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #7e8287;
+    text-align: center;
+    width: 700px;
+}
+
+
+form .email_address input:focus{
+    box-shadow: none;
+    outline: none;
+
+}
+
+form .message{
+    margin-top: 48px;
+}
+form .message textarea{
+    color: #7e8282;
+    padding-top: 20px;
+    background-color: #0b0b0b;
+    border: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #7e8287;
+    text-align: center;
+    width: 950px;
+}
+form .message textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+.button_part{
+    margin-top: 61px;
+}
+
+.button_part button{
+    font-weight: 800;
+    border: none;
+    background-color: #cfc91d;
+    padding: 8px 36px;          
+    color: #0b1016;
+}
+/* //Contact Section Css End */
+/* End Section Css Start */
+#end{
+
+    background-color: #000000;
+    height: 71px;
+}
+.end_content p{
+    padding-top: 33px;
+    font-size: 14px;
+    color: #4a4d50;
+}
+/* //End Section Css End  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
